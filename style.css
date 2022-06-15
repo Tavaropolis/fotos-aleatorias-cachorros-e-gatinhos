@@ -1,0 +1,83 @@
+:root{
+    --estilo-font-titulo: 'Fascinate', sans-serif;
+    --estilo-font-texto: 'Oswald', sans-serif;
+    --cor-de-fundo: #f1b42f;
+    --cor-secundaria: #f3c052;
+    --cor-foto: #f9e2ae;
+    --cor-texto: white;
+    --cor-botao: #52F368;
+}
+
+.hide{
+    display: none;
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+}
+
+h1{
+    text-align: center;
+    font-family: var(--estilo-font-titulo);
+    font-size: 3em;
+    color: var(--cor-texto)
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1em auto;
+}
+
+#container-gato{
+    width: 20em;
+    height: 30em;
+    background-color: var(--cor-foto);
+    margin: auto 3em;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#container-cachorro{
+    width: 20em;
+    height: 30em;
+    background-color: var(--cor-foto);
+    margin: auto 3em;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.foto{
+    width: 20em;
+    height: 30em;
+    object-fit: fill;
+    border-radius: 15px;
+}
+
+.container-botoes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1em auto;
+}
+
+.botao-envio{
+    background-color: var(--cor-botao);
+    width: 15em;
+    height: 5em;
+    border-radius: 15px;
+    margin: 0 8.5em;
+    font-family: var(--estilo-font-titulo);
+    color: var(--cor-texto);
+    text-align: center;
+    font-weight: bold;
+}
+
+.botao-envio:active{
+    transform: scale(0.98);
+}
