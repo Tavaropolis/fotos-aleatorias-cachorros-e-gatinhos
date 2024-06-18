@@ -18,5 +18,5 @@ async function fotoGato() {
     const dadosGatoJson = await dadosGato.json();
     htmlGato.classList.remove('hide');
     const urlGato = `https://cataas.com${dadosGatoJson.url}`
-    htmlGato.setAttribute('src', urlGato);
+    htmlGato.setAttribute('src', dadosGato);
 }
