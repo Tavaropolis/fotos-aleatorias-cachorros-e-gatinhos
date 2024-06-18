@@ -14,7 +14,7 @@ async function fotoCachorro() {
 }
 
 async function fotoGato() {
-    const dadosGato = await fetch('https://cataas.com/cat?json=true');
+    const dadosGato = await fetch('https://cataas.com/cat');
     const dadosGatoJson = await dadosGato.json();
     htmlGato.classList.remove('hide');
     const urlGato = `https://cataas.com${dadosGatoJson.url}`
