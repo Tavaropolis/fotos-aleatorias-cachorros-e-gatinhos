@@ -17,6 +17,5 @@ async function fotoGato() {
     const dadosGato = await fetch('https://api.thecatapi.com/v1/images/search');
     const dadosGatoJson = await dadosGato.json();
     htmlGato.classList.remove('hide');
-    const urlGato = `https://cataas.com${dadosGatoJson.url}`
-    htmlGato.setAttribute('src', adosGatoJson.url);
+    htmlGato.setAttribute('src', dadosGatoJson[0].url);
 }
