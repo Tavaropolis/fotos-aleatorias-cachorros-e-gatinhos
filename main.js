@@ -19,3 +19,11 @@ async function fotoGato() {
     htmlGato.classList.remove('hide');
     htmlGato.setAttribute('src', dadosGatoJson[0].url);
 }
+
+htmlCachorro.addEventListener('error', () => {
+    htmlCachorro.setAttribute('src', './cachorro.jpg');
+})
+
+htmlGato.addEventListener('error', () => {
+    htmlGato.setAttribute('src', './gato.jpg');
+})
